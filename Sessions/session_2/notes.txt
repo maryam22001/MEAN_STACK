@@ -58,3 +58,29 @@ CSS FLEXBOX QUICK REVISION
     - Use Cases:
       * Transitions: Simple property changes (hover effects, button interactions).
       * Keyframes: Complex multi-step animations (loading spinners, page transitions).
+********************************************************************
+8. BOOTSTRAP 5 QUICK NOTES
+
+   - Grid System:
+     * Every `.row` is divided into 12 columns.
+     * Breakpoints: `sm` (≥576px), `md` (≥768px), `lg` (≥992px), `xl` (≥1200px), `xxl` (≥1400px).
+     * Example: `col-md-6` means "take 6 of 12 columns on medium screens and up".
+
+   - Gutters (Gaps):
+     * Gutters are the gaps between columns.
+     * Control them on the `.row` with `g-*`, `gx-*` (horizontal), or `gy-*` (vertical) classes.
+     * `g-0`: Removes gutters. `g-5`: Largest gutter.
+
+   - Offsetting Columns:
+     * Use `offset-*` to push columns to the right.
+     * Example: `offset-md-2` pushes a column by 2 column widths on medium screens.
+
+   - Spacing Utilities (Margin & Padding):
+     * Format: `{property}{sides}-{size}`
+     * Property: `m` (margin), `p` (padding).
+     * Sides: `t` (top), `b` (bottom), `s` (start/left), `e` (end/right), `x` (horizontal), `y` (vertical).
+     * Size Scale (0-5):
+       - `0` = 0
+       - `1` = .25rem
+       - `3` = 1rem
+       - `5` = 3rem
