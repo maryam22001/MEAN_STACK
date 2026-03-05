@@ -1,0 +1,38 @@
+HTML & Bootstrap Recap
+1. Grid & Layout System
+.row: Wrapper for columns. It acts as a flex container.
+.col-10, .col-8: Grid columns occupying 10 or 8 out of 12 available slots.
+.mx-auto: Sets horizontal margins (margin-left and margin-right) to auto. Used here to center the col-10 div within the row.
+.justify-content-center: A flexbox utility used on .row to center columns horizontally (useful when columns don't add up to 12).
+2. Spacing Utilities (Margin & Padding)
+Bootstrap uses the format {property}{side}-{size}.
+
+p-4: Padding of size 4 on all sides.
+pt-5: Padding Top of size 5.
+pb-5: Padding Bottom of size 5.
+mt-5: Margin Top of size 5.
+mx-auto: Horizontal margin (x-axis) set to auto.
+3. Tables (<table>)
+.table: Base class for Bootstrap styling.
+.table-dark: Inverts the colors to a dark background with light text.
+.table-striped: Adds zebra-striping to table rows within the <tbody>.
+.table-hover: Enables a hover state on table rows.
+Tags:
+<thead>: Table Header (Note: The code had a typo <theah>).
+<tbody>: Table Body.
+<tr>: Table Row.
+<th>: Table Header Cell (bold, centered by default).
+<td>: Table Data Cell.
+4. Forms (<form>)
+.form-label: Applied to <label> elements for consistent styling and spacing.
+.form-control: Applied to <input> elements to make them block-level (100% width) and apply Bootstrap styling (borders, padding, focus states).
+5. Colors & Backgrounds
+.bg-light: Light gray background.
+.bg-primary: Blue background.
+.bg-success: Green background.
+.bg-danger: Red background.
+.bg-warning: Yellow/Orange background.
+.bg-info: Cyan/Light Blue background.
+6. Borders
+.rounded: Adds default border-radius to corners.
+.rounded-5: Adds a specific, larger border-radius size (scale 0-5).
