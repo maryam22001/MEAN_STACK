@@ -1,0 +1,306 @@
+.Hero {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: black;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Navbar {
+    background-color: rgba(151, 144, 144, 0.8);
+    height: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 0 20px;
+}
+
+.NavList {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.NavList li {
+    padding-bottom: 10px;
+    color: #b0b0b0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.NavList img {
+    height: 30px;
+    width: auto;
+}
+
+.HeroContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.HeroContent .s-h img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.HeroContent .f-h {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    margin-left: 150px;
+}
+
+.HeroContent .f-h h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.HeroContent .f-h p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.f-h .btn {
+    background-color: rgb(3, 126, 9);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.HeroContent .workedWith {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.workedWith .b1 {
+    background-color: transparent;
+    height: 60px;
+    width: 130px;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workedWith .b1 img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.CaseStudy {
+    margin: 30px 30px;
+    height: auto;
+}
+
+.CaseStudy .intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cases-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.case-card {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.case-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.case-content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.case-content .btn {
+    background-color: rgb(3, 126, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.Test {
+    background-color: black;
+    height: auto;
+    padding: 20px 20px 30px;
+}
+
+.Test .intro {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Test-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Test-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.testimonial-author img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.RecentWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.RecentWork .intro {
+    text-align: center;
+}
+
+.RecentWork .work-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.RecentWork .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+
+.RecentWork .work-card img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.RecentWork .work-card .btn {
+    background-color: rgb(3, 126, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Contact {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.Contact .intro {
+    text-align: center;
+    color: white;
+}
+
+.Contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.Contact .contact-form input,
+.Contact .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Contact .contact-form .btn {
+    background-color: rgb(3, 126, 9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+}
+
