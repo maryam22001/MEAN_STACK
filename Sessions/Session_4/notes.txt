@@ -1,0 +1,88 @@
+# Session 4 - JavaScript Fundamentals
+
+## Resources
+- [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Codesmith YouTube Playlists](https://www.youtube.com/@Codesmith/playlists)
+- [JavaScript30 - Coding Challenges](https://javascript30.com/)
+
+## Data Types
+
+### Overview
+Use the `typeof` operator to determine a variable's data type.
+
+### Primitive Types
+1. **String** - Text values enclosed in quotes (`"hello"`, `'world'`)
+2. **Number** - Integers and decimals (`42`, `3.14`)
+3. **Boolean** - Logical values (`true`, `false`)
+4. **Undefined** - Variable declared but not assigned a value
+5. **Null** - Intentional absence of value (use `typeof` carefully here)
+6. **BigInt** - Large integers beyond Number's safe range (`123n`)
+7. **Symbol** - Unique, immutable identifiers
+
+### Complex Types
+8. **Object** - Collections of key-value pairs, arrays, functions, etc.
+
+### Key Difference: null vs undefined
+- **undefined**: Automatically assigned when variable is declared but not initialized
+- **null**: Intentionally assigned to represent "no value"
+
+###Variables Declerations :
+- `var`: redecleration allowed , we take the second decleration ,reassign is allowed I can define the var twice without error
+- `let`: redecleration not allowed , we take the first decleration , we can change the value  another time forward ,reassign is allowed,cant define the  variable twice
+- `const`: redecleration isnt allowed nor reassign 
+ 
+ we dont need to specify the js data type while declaring variables thats a js disadvantage , fixed in typescript 
+
+###Variable Naming conventions :
+firstName , First_Name , firstnName123 (we can't start with numbers nor - , the only characters to be used $ ,_)
+### String Methods
+String Manipulation: details common methods to inspect, modify (returning new strings), and dissect text data.
+- `string.length`: Property returning the length of the string.
+- `string.charAt(index)`: Returns the character at the specified index.
+- `string.trim()`: Removes whitespace from both ends.
+- `string.toUpperCase()` / `string.toLowerCase()`: Converts case.
+- `string.indexOf("char", fromIndex)`: Returns the index of the first occurrence.
+- `string.lastIndexOf("char", fromIndex)`: Returns the index of the last occurrence (searches backwards).
+- `string.slice(start, end)`: Extracts a section of the string (end index not included).
+- `string.substring(start, end)`: Similar to slice.but cant take negative values.
+- `string.split(separator)`: Splits the string into an array.
+- `string.includes("char")`: Returns true if the string contains the value.
+- `string.startsWith("char", index)`: Checks if string starts with characters.
+- `string.endsWith("char", length)`: Checks if string ends with characters.
+- `string.replace(search, replace)`: Replaces the first occurrence of a specified value.
+- `string.replaceAll(search, replace)`: Replaces all occurrences of a specified value.
+
+### User Interaction
+Interaction: Mentions prompt(), a browser-specific function to get input from the user.
+- `prompt()`: Displays a dialog box requesting user input.
+
+
+if condition 
+if(condition){ code } elseif(condition){ code } else{ code }
+condition? code:condition? code:code
+
+
+### Switch Statement
+The `switch` statement is used to perform different actions based on different conditions.
+
+```javascript
+switch (expression) {
+  case value1:
+    // Code to be executed if expression matches value1
+    break;
+  case value2:
+    // Code to be executed if expression matches value2
+    break;
+  // ... more cases
+  default:
+    // Code to be executed if expression doesn't match any case
+}
+```
+
+### Loops
+Loops are used to execute a block of code repeatedly.
+
+- **`for` loop**: Loops through a block of code a specific number of times.
+- **`while` loop**: Loops through a block of code as long as a specified condition is true.
+- **`do...while` loop**: Similar to the `while` loop, but the code block is executed at least once before the condition is checked.
+- **`for...in` loop**: Loops through the properties of an object.
