@@ -14,5 +14,8 @@ last index of :returns the index of the last occurrence of an element in the arr
 include : returns true and flase 
 sort : sort in alphapitical order 
 reverse: reverse the order of the elements in the array
+concat : creates a new array by concatenating the original array with the new array 
+****************************************************************
+while for a condition I dont know how many times it needs to be repeated
 
 
