@@ -1,0 +1,11 @@
+# Session 5- JavaScript Fundamentals
+
+## Arrays methods :
+push: adds an element at the end of the array
+pop :removes the last element of the array
+shift:removes the first element of the array
+unshift: adds an element at the beginning of the array
+
+***************************************************************
+## Strings methods :
+
