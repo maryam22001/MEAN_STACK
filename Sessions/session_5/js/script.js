@@ -67,10 +67,79 @@ while(num<10 || num>50){ // the propmt stops when entering a correct number
 }
 console.log(`the number is ${num}`)
 **/
-let str = prompt("Enter a string");
+/**let str = prompt("Enter a string");
 
 while(str!="admin"){
 console.log("Incorrect password");
 str = prompt("Enter a string");
 }
 console.log("Correct password entered");
+**/
+
+/**let num 
+do {
+num= prompt("Enter a number");
+}
+while(isNaN(num)){ // the prompt stops when entering a number
+    console.log("Please enter a valid number");
+    num = prompt("Enter a number");
+}
+console.log(`the number is ${num}`)
+**/
+//Function Decleration
+/**function Hello(){
+    console.log("Hello World");
+}
+Hello(); //wherever we put this line it will work because of hoisting, it is a mechanism in JavaScript where function declarations are moved to the top of their containing scope during the compilation phase, allowing them to be called before they are defined in the code.
+
+var Hello= "Hello2"
+
+//we write the function first then the variable ,
+//but the variable is hoisted and assigned undefined, so when we call the function it will print "Hello World" because the function declaration is hoisted and the variable declaration is also hoisted but it is assigned undefined, so it does not affect the function declaration.
+**/
+/** 
+//-----------------
+//Hello() won't print anything 
+let Hello= function(){
+    console.log("Hello World");
+}
+Hello(); //prints "Hello World", it is a function expression, it is not hoisted, so we have to call the function after the function expression is defined.
+//-----------------------------
+// Arrow function */
+/** 
+let Hello2 = () => {
+    console.log("Hello World");
+}
+Hello2();
+//-----------------------------------------
+**/
+
+/** 
+function num(n1,n2){
+    console.log(n1+n2);
+}
+
+function calc(length ,width){
+    return length*width;
+}
+console.log(calc(5,10)) 
+*/
+//default
+/** 
+ function num(n1=0,n2=0){ //if we do not pass any argument it will take the default value of 0
+    console.log(n1+n2);
+}
+    */
+
+function calc(n1,n2,operator){
+    if(operator=="+"){
+       console.log(`${n1} + ${n2} = ${n1+n2}`) //prints the sum of n1 and n2;
+    }
+    
+    else if(operator=="-"){
+        console.log(`${n1} - ${n2} = ${n1-n2}`) //prints the difference of n1 and n2;
+    }
+    else if(operator=="*"){
+        console.log(`${n1} * ${n2} = ${n1*n2}`) //prints the product of n1 and n2;
+    }
+}

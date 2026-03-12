@@ -16,6 +16,19 @@ sort : sort in alphapitical order
 reverse: reverse the order of the elements in the array
 concat : creates a new array by concatenating the original array with the new array 
 ****************************************************************
-while for a condition I dont know how many times it needs to be repeated
+## Loops:
+while: repeats a block of code as long as a condition is true (unknown number of iterations)
+do while: executes a block of code once, then repeats while a condition is true
+for: repeats a block of code a specific number of times (known iterations)
+for...in: loops through object properties
+for...of: loops through array values
 
+****************************************************************
+## Function Declaration:
+- Function Declaration: named function defined with `function` keyword
+- Function Expression: function assigned to a variable
+- Arrow Function: concise syntax using `=>` operator
 
+## if vs switch:
+- Use `if`: for complex conditions, ranges, or boolean logic
+- Use `switch`: for single variable with multiple specific values (cleaner and more readable)
