@@ -8,4 +8,11 @@ unshift: adds an element at the beginning of the array
 
 ***************************************************************
 ## Strings methods :
+slice: removes and you specify the index of the elemeent you want to remove
+indexof: displays the index of an element 
+last index of :returns the index of the last occurrence of an element in the array
+include : returns true and flase 
+sort : sort in alphapitical order 
+reverse: reverse the order of the elements in the array
+
 
