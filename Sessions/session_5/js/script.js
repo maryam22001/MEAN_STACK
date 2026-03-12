@@ -131,6 +131,8 @@ console.log(calc(5,10))
 }
     */
 
+
+/** 
 function calc(n1,n2,operator){
     if(operator=="+"){
        console.log(`${n1} + ${n2} = ${n1+n2}`) //prints the sum of n1 and n2;
@@ -143,3 +145,23 @@ function calc(n1,n2,operator){
         console.log(`${n1} * ${n2} = ${n1*n2}`) //prints the product of n1 and n2;
     }
 }
+*/
+
+
+//rest parameter, it allows us to pass an indefinite number of arguments as an array
+function calc(...num){ 
+let result =0;
+    for(let i=0;i<num.length;i++){
+    result+=num[i] //adds all the elements of the array and stores it in the result variable
+    console.log(num[i])
+}
+    console.log(result)
+}
+let x = 13 ;
+let y= 14 ;
+
+console.log( ` ${x} globole scope `);
+if (true){
+    console.log(x);
+}
+
