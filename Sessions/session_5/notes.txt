@@ -36,3 +36,6 @@ for...of: loops through array values
 
 
 ##Globle Scope:
+
+
+
