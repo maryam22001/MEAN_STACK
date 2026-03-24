@@ -85,5 +85,10 @@ Later in your course, you won't manually write `document.getElementById`. Instea
 | `element.style` | `[ngStyle]` | Changes colors or fonts dynamically. |
 | `innerText` | `{{ variable }}` | String Interpolation to show data. |
 
-**Mastering this Vanilla JS version ensures you understand the engine that makes frameworks like Angular work.**
+
 ```
+Line / Concept,Explanation
+const newArray,Filter always returns a new array. The original remains safe (Immutability).
+return true,"If the function returns true, the element is pushed into the new array."
+return false,"If the function returns false, the element is discarded."
+"pod.status === ""Error""","This is the ""Predicate."" It's the logic that decides who stays and who goes."

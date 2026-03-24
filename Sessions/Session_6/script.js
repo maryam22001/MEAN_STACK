@@ -99,3 +99,84 @@ function toggleMode() {
 
 // Modern Event Listener
 btn.addEventListener("click", toggleMode);
+
+/**Filter Method  */
+
+let newArray = oldArray.filter((element, index, array) => {
+  return // A condition that results in true or false
+});
+const scores = [10, 55, 2, 88, 45, 90];
+
+const highScores = scores.filter((num) => {
+  return num > 50; 
+});
+
+console.log(highScores); // Output: [55, 88, 90]
+
+/**DevOps "Pod" Filter */
+const pods = [
+  { id: 1, status: "Running" },
+  { id: 2, status: "Error" },
+  { id: 3, status: "Pending" },
+  { id: 4, status: "Error" }
+];
+
+// Only keep the pods that have an "Error" status
+const crashedPods = pods.filter((pod) => {
+  return pod.status === "Error";
+});
+
+console.log(crashedPods); 
+// Output: [{id: 2, status: "Error"}, {id: 4, status: "Error"}]
+/**ilter that only returns products that cost less than 900 */
+let products = [
+  { name: "laptop", price: 1000 },
+  { name: "phone", price: 500 },
+  { name: "tablet", price: 850 },
+  { name: "tablet", price: 750 },
+];
+
+// The Goal: Return only products costing less than 900
+let affordableProducts = products.filter((item) => {
+  return item.price < 900;
+});
+
+console.log(affordableProducts);
+/* Output: 
+[
+  { name: "phone", price: 500 },
+  { name: "tablet", price: 850 },
+  { name: "tablet", price: 750 }
+]
+*/
+/** In a real-world scenario, your "Products" could be Cloud Instances or Docker Images.
+
+The Filter: You might want to filter for images that are "Older than 30 days" to delete them and save storage space.
+
+The Logic: images.filter(img => img.age > 30).*/
+
+/**e all those products a 10% discount using .map*/
+let products1 = [
+  { name: "laptop", price: 1000 },
+  { name: "phone", price: 500 },
+  { name: "tablet", price: 850 },
+];
+
+// The Goal: Return a NEW array where each price is multiplied by 0.9 (10% off)
+let discountedProducts = products1.map((item) => {
+  return {
+    name: item.name,           // Keep the name the same
+    price: item.price * 0.9,   // Transform the price
+    status: "On Sale!"         // You can even add NEW properties!
+  };
+});
+
+console.log(discountedProducts);
+/* Output:
+[
+  { name: "laptop", price: 900, status: "On Sale!" },
+  { name: "phone", price: 450, status: "On Sale!" },
+  { name: "tablet", price: 765, status: "On Sale!" }
+]
+*/
+//the original products array still has the full prices. This is critical for debugging
