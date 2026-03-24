@@ -85,5 +85,4 @@ Later in your course, you won't manually write `document.getElementById`. Instea
 | `element.style` | `[ngStyle]` | Changes colors or fonts dynamically. |
 | `innerText` | `{{ variable }}` | String Interpolation to show data. |
 
-**Mastering this Vanilla JS version ensures you understand the engine that makes frameworks like Angular work.**
 ```
