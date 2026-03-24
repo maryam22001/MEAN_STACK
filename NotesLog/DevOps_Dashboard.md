@@ -85,7 +85,10 @@ Later in your course, you won't manually write `document.getElementById`. Instea
 | `element.style` | `[ngStyle]` | Changes colors or fonts dynamically. |
 | `innerText` | `{{ variable }}` | String Interpolation to show data. |
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7849f430c0e4c7077bf13c66ec509da7365202b2
 ```
 Line / Concept,Explanation
 const newArray,Filter always returns a new array. The original remains safe (Immutability).
