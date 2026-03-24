@@ -171,4 +171,4 @@ async function healthCheck() {
 - [ ] Monitor "Sawtooth" memory patterns in Grafana to find JS leaks.
 - [ ] Never use `ctrl+x` on production code—use `btn.remove()` for dynamic UI updates.
 ```
---
+----
