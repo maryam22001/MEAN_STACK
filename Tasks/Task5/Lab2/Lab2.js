@@ -3,7 +3,7 @@
 //2-cloning func
 
 
-const first =document.getElementById("FirstSquare");
+const first =document.getElementById("firstSquare");
 const container = document.getElementById("container");
 
 const getRandomColor = () => {
