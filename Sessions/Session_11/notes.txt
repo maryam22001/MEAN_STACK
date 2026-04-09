@@ -1,1 +1,6 @@
-##Session 10
+##Session 11 
+browser obj model 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window
+
+

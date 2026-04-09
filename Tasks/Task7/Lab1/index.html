@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        progress {
+            appearance: none;
+            margin-bottom: 10px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+        }
+
+        ::-webkit-progress-bar{
+            background-color: #cb1f1f;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            
+        }
+        ::-webkit-progress-value {
+            background-color: #4caf50;
+            border-radius: 10px;
+            width: 100%;
+        }   
+      
+    </style>
+
+</head>
+<body>
+ <progress id="progress" value="0" max="100"></progress>
+
+ 
+    <span>100%  </span>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

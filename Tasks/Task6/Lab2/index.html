@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body { background: rgb(27, 42, 117); font-family: sans-serif; }
+
+#clock {
+  position: absolute;
+  left: 50%;
+  top: 40%; /* Moved up slightly */
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#buttons {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+#start { background-color: #2ecc71; }
+#start:hover { background-color: #27ae60; transform: translateY(-2px); }
+
+#stop { background-color: #e74c3c; }
+#stop:hover { background-color: #c0392b; transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div id="clock" class="clk"></div>
+
+     <div id="buttons" class="btn">
+          
+            <button class="btn" id="stop">
+                Stop</button>
+                 <button class="btn" id="start">
+                Start</button>
+           
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

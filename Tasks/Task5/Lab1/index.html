@@ -9,13 +9,14 @@
 <body>
 
 <div class="container">
-    <form id="loginForm">
-        <label>Name:</label>
-        <input id="nameLabel" type="text" placeholder="My name is..." required>
-        
+    <form id="loginForm" novalidate> <label>Name:</label>
+        <input id="nameLabel" type="text" placeholder="My name is...">
+        <span id="nameerr" style="color: red;"></span>
+
         <label>Age:</label>
-        <input id="ageLabel" type="text" placeholder="I am ... years old" required>
-        
+        <input id="ageLabel" type="text" placeholder="I am ... years old">
+        <span id="ageerr" style="color: red;"></span>
+
         <input type="submit" value="Add to Table">
     </form>
 </div>

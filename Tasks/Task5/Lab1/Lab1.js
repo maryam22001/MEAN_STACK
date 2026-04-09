@@ -1,44 +1,53 @@
 //input form with user name and age > requered 
 //once send empty the inputs into the tables 
-
 const nameInput = document.getElementById("nameLabel");
 const ageInput = document.getElementById("ageLabel");
 const loginForm = document.getElementById("loginForm");
 const tableBody = document.getElementById("tableBody");
+const nameErr = document.getElementById("nameerr");
+const ageErr = document.getElementById("ageerr");
 
-// Validation Styling: Changes border color when user interacts with inputs
-[nameInput, ageInput].forEach(input => {
-    input.addEventListener("input", (e) => {
-        if (e.target.value.trim() !== "") {
-            e.target.style.border = "2px solid #2ecc71"; // Green
-        } else {
-            e.target.style.border = "2px solid #e74c3c"; // Red
-        }
-    });
-});
-
-// Handle Form Submission
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const name = nameInput.value;
-    const age = ageInput.value;
+    const name = nameInput.value.trim();
+    const age = ageInput.value.trim();
+    let isValid = true;
 
-    // Create Table Row
-    const row = document.createElement("tr");
-    
-    const nameCell = document.createElement("td");
-    nameCell.textContent = name;
-    
-    const ageCell = document.createElement("td");
-    ageCell.textContent = age;
-
-    row.appendChild(nameCell);
-    row.appendChild(ageCell);
-    tableBody.appendChild(row);
-
-    // Reset form and input borders
-    loginForm.reset();
+    // Reset previous errors
+    nameErr.textContent = "";
+    ageErr.textContent = "";
     nameInput.style.border = "1px solid #ddd";
     ageInput.style.border = "1px solid #ddd";
+
+    // JavaScript Validation Logic
+    if (name === "") {
+        nameErr.textContent = "Name is required";
+        nameInput.style.border = "1px solid red";
+        isValid = false;
+    }
+
+    if (age === "") {
+        ageErr.textContent = "Age is required";
+        ageInput.style.border = "1px solid red";
+        isValid = false;
+    }
+
+    // Only add to table if validation passes
+    if (isValid) {
+        const row = document.createElement("tr");
+
+        const nameCell = document.createElement("td");
+        nameCell.textContent = name;
+
+        const ageCell = document.createElement("td");
+        ageCell.textContent = age;
+
+        row.appendChild(nameCell);
+        row.appendChild(ageCell);
+        tableBody.appendChild(row);
+
+        // Reset form
+        loginForm.reset();
+    }
 });
