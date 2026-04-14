@@ -5,8 +5,7 @@ body {
   transition: background-color .5s;
 }
 
-/* Using flex with the column direction to
-   align items in a vertical direction */
+
 .player {
   height: 95vh;
   display: flex;
@@ -14,7 +13,17 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+.wrapper {
+  background: #ffffff;
+  width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .details {
   display: flex;
   align-items: center;
@@ -24,14 +33,24 @@ body {
 }
 
 .track-art {
-  margin: 25px;
-  height: 250px;
-  width: 250px;
-  background-image: URL(
-     "https://source.unsplash.com/Qrspubmx6kE/640x360");
+  margin: 20px;
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
-  border-radius: 15%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  background-image: URL(
+     "https://source.unsplash.com/Qrspubmx6kE/640x360");
+
+ -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+
+  
 }
 
 /* Changing the font sizes to suitable ones */
@@ -40,48 +59,63 @@ body {
 }
 
 .track-name {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .track-artist {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: gray;
 }
 
-/* Using flex with the row direction to
-   align items in a horizontal direction */
 .buttons {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+  justify-content: center;
   align-items: center;
-}
 
+  margin-top: 20px;
+}
+.active {
+  color: rgb(74, 86, 171);
+}
+.random-track,
+.repeat-track,
 .playpause-track,
 .prev-track,
 .next-track {
-  padding: 25px;
-  opacity: 0.8;
-
-  /* Smoothly transition the opacity */
+  padding: 25px; 
+ opacity:0.8;
+ 
   transition: opacity .2s;
+
 }
 
-/* Change the opacity when mouse is hovered */
+
+.random-track:hover,
+.repeat-track:hover,
 .playpause-track:hover,
 .prev-track:hover,
 .next-track:hover {
-  opacity: 1.0;
+ 
+ opacity:1.0;
+ 
+
+
 }
 
-/* Define the slider width so that it scales properly */
+
+
 .slider_container {
-  width: 75%;
+  width: 100%;
   max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
+
+
 }
 
-/* Modify the appearance of the slider */
 .seek_slider, .volume_slider {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -93,7 +127,6 @@ body {
   transition: opacity .2s;
 }
 
-/* Modify the appearance of the slider thumb */
 .seek_slider::-webkit-slider-thumb,
 .volume_slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -102,6 +135,7 @@ body {
   width: 15px;
   height: 15px;
   background: white;
+  border:3px solid rgb(17, 133, 210);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -123,6 +157,8 @@ body {
 .current-time,
 .total-duration {
   padding: 10px;
+   min-width: 50px;
+  text-align: center;
 }
 
 i.fa-volume-down,
@@ -130,11 +166,72 @@ i.fa-volume-up {
   padding: 10px;
 }
 
-/* Change the mouse cursor to a pointer
-   when hovered over */
+
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
+}
+.randomActive {
+  color: rgb(17, 133, 210);
+}
+.rotate {
+  animation: rotation 6s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader, .stroke{
+  background: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0px 5px;
+animation: animate 1.5s linear infinite;
+
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.stroke:nth-last-child(1){
+  animation-delay: 0s;
+
+}
+.stroke:nth-last-child(2){
+  animation-delay: 0.5s;
+
+}
+.stroke:nth-last-child(3){
+  animation-delay: 1s;
+
+}
+.stroke:nth-last-child(4){
+  animation-delay: 1.5s;
+
+}
+.stroke:nth-last-child(5){
+  animation-delay: .5s;
+
+}
+.stroke:nth-last-child(6){
+  animation-delay: 1.5s;
+
+}
+.stroke:nth-last-child(7){
+  animation-delay: 0s;
+
 }
