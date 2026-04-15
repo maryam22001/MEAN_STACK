@@ -1,0 +1,62 @@
+
+body {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.canvas {
+  width: 500px;
+  height: 400px;
+  background: #eee;
+  border: 2px solid #555;
+  position: relative;
+}
+
+/* Circle style */
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+/* Just random positions (manually placed) */
+.c1 { top: 20px; left: 30px; }
+.c2 { top: 40px; left: 80px; }
+.c3 { top: 60px; left: 120px; }
+.c4 { top: 100px; left: 200px; }
+.c5 { top: 150px; left: 250px; }
+.c6 { top: 200px; left: 300px; }
+.c7 { top: 250px; left: 100px; }
+.c8 { top: 300px; left: 200px; }
+.c9 { top: 180px; left: 50px; }
+.c10 { top: 220px; left: 150px; }
+.c11 { top: 90px; left: 350px; }
+.c12 { top: 50px; left: 400px; }
+.c13 { top: 300px; left: 350px; }
+.c14 { top: 260px; left: 400px; }
+.c15 { top: 120px; left: 100px; }
+
+/* Bottom controls */
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-box {
+  width: 80px;
+  height: 30px;
+  background: red;
+  border: 2px solid #555;
+}
+
+button {
+  padding: 5px 10px;
+}
