@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+<h2>Drag & Drop Between Columns</h2>
+
+<div class="container">
+  
+  <div class="column"
+       ondrop="dropHandler(event)"
+       ondragover="dragoverHandler(event)">
+       
+    <div id="item1" class="item" draggable="true" ondragstart="dragstartHandler(event)">
+      Item 1
+    </div>
+    
+    <div id="item2" class="item" draggable="true" ondragstart="dragstartHandler(event)">
+      Item 2
+    </div>
+
+  </div>
+
+  <div class="column"
+       ondrop="dropHandler(event)"
+       ondragover="dragoverHandler(event)">
+       
+    <div id="item3" class="item" draggable="true" ondragstart="dragstartHandler(event)">
+      Item 3
+    </div>
+
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
