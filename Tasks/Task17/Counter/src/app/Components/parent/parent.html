@@ -1,0 +1,12 @@
+<div class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light">
+  <div class="text-center">
+    <h5 class="text-secondary fw-light mb-2">Counter Value</h5>
+    <h1 class="display-1 fw-bold text-dark mb-4">{{ sharedCount }}</h1>
+    
+    <app-counter 
+      [parentCount]="sharedCount" 
+      (modify)="changeSharedCount($event)"
+      (reset)="resetSharedCount()">
+    </app-counter>
+  </div>
+</div>

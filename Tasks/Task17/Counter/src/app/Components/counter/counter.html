@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center gap-3">
+  <button (click)="inc()" class="btn btn-success px-4 py-2">Increment</button>
+  <button (click)="dec()" [disabled]="parentCount <= 0" class="btn btn-warning px-4 py-2 text-white">Decrement</button>
+  <button (click)="increaseBy(5)" class="btn btn-info px-4 py-2 text-white">Increase By 5</button>
+  <button (click)="resetValue()" class="btn btn-danger px-4 py-2">Reset</button>
+</div>
