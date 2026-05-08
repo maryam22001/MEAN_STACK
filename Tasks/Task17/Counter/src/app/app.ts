@@ -4,7 +4,7 @@ import { Parent } from './Components/parent/parent';
 
 @Component({
   selector: 'app-root',
-  imports: [Parent  ],
+  imports: [Parent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
